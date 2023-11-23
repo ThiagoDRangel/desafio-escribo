@@ -1,0 +1,29 @@
+# Dependências
+node_modules/
+
+# Arquivos de log
+npm-debug.log
+yarn-error.log
+
+# Diretórios de build/compilação
+dist/
+build/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diretórios e arquivos de cache
+.cache/
+.pnpm-store/
+.vscode/
+.idea/
+.DS_Store
+
+# Outros arquivos e diretórios
+*.log
+*.tmp
+*.temp
