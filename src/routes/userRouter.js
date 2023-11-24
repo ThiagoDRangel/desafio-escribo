@@ -16,7 +16,7 @@ router.post('/signup', async (req, res) => {
       return res.status(400).json({ mensagem: "E-mail já existente" });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(senha, 10);
     const user = await User.create({
       nome,
       email,
