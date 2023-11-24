@@ -43,3 +43,45 @@ autenticação (sign in) e recuperação de informações do usuário.
 > Key: `Authorization` Value: `Bearer token`
 
 ![Texto Alternativo](./src/images/user.png)
+
+
+## Executando a API `localmente`
+```bash
+git clone git@github.com:ThiagoDRangel/desafio-escribo.git
+```
+
+### Acesse a pasta
+```bash
+cd desafio-escribo
+```
+
+### Instale as dependências
+```bash
+npm install
+```
+
+### Utilize o ORM Sequelize para criar o `DB`
+
+#### Crie o banco de dados e a tabela
+```bash
+npm run prestart
+```
+#### Popule a tabela com dados iniciais `teste`
+```bash
+npm run seed
+```
+
+#### `Caso precise reiniciar o banco de dados do zero`
+```bash
+npm run drop
+```
+
+### Coloque o servidor no ar `localhost:3000`
+```bash
+npm start
+```
+
+### Execute os testes a qualquer momento
+```bash
+npm test
+```
